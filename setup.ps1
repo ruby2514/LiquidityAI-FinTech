@@ -124,17 +124,13 @@ function Write-Summary {
     Write-Host ""
   }
 
-  Write-Host "  Default admin accounts:" -ForegroundColor White
+  Write-Host "  Default admin account:" -ForegroundColor White
   Write-Host ""
-  Write-Host "    Shellshock (Super Admin)" -ForegroundColor Yellow
-  Write-Host "    Email:    shellshock9001@gmail.com"
-  Write-Host "    Password: DonnAI2026!"
-  Write-Host ""
-  Write-Host "    DonnaAI (Admin)" -ForegroundColor Yellow
+  Write-Host "    DonnaAI (Super Admin)" -ForegroundColor Yellow
   Write-Host "    Email:    donna@donnaai.com"
   Write-Host "    Password: DonnAI2026!"
   Write-Host ""
-  Write-Host "  WARNING: Change these passwords after first login!" -ForegroundColor Red
+  Write-Host "  WARNING: Change this password after first login!" -ForegroundColor Red
   Write-Host ""
 }
 

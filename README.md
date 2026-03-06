@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🔐 Donna — Financial Intelligence Graph
+# 🔐 DonnaAI — Financial Intelligence Graph
 
 **Enterprise-grade knowledge graph platform for financial data intelligence,**
 **with RBAC user management, risk-scored signups, and SOC 2-ready audit logging.**
@@ -17,7 +17,7 @@
 
 ## Table of Contents
 
-- [What Is Donna?](#what-is-donna)
+- [What Is DonnaAI?](#what-is-donnaai)
 - [Quick Start](#-quick-start)
 - [Requirements](#-requirements)
 - [Feature Status Matrix](#-feature-status-matrix)
@@ -35,9 +35,9 @@
 
 ---
 
-## What Is Donna?
+## What Is DonnaAI?
 
-Donna is a **financial intelligence graph platform** designed for investment firms, family offices, and fintech operators. It aggregates data from multiple sources (PitchBook, SEC EDGAR, LinkedIn, Crunchbase, etc.), resolves entities using AI, and presents a unified knowledge graph with full provenance tracking.
+DonnaAI is a **financial intelligence graph platform** designed for investment firms, family offices, and fintech operators. It aggregates data from multiple sources (PitchBook, SEC EDGAR, LinkedIn, Crunchbase, etc.), resolves entities using AI, and presents a unified knowledge graph with full provenance tracking.
 
 **Core Value Proposition:**
 - **Single Source of Truth (SSOT)** for canonical financial entities (orgs, funds, people, deals)
@@ -105,7 +105,7 @@ npm start                      # Start production server on :3001
 | **Git** | Any | ⚡ Recommended | For cloning |
 | **Docker** | 20+ | ❌ Optional | For container deployment |
 
-> **No external databases.** Donna uses SQLite — zero infrastructure needed.
+> **No external databases.** DonnaAI uses SQLite — zero infrastructure needed.
 
 ---
 
@@ -565,14 +565,13 @@ npm run docker:logs      # docker compose logs -f donna
 
 ---
 
-## 👤 Default Admin Accounts
+## 👤 Default Admin Account
 
 | User | Email | Role | Password |
 |------|-------|------|----------|
-| **Shellshock** | `shellshock9001@gmail.com` | Super Admin | `DonnAI2026!` |
-| **DonnaAI** | `donna@donnaai.com` | Admin | `DonnAI2026!` |
+| **DonnaAI** | `donna@donnaai.com` | Super Admin | `DonnAI2026!` |
 
-> ⚠️ **Change these passwords immediately after first login** via Profile Panel → Password tab.
+> ⚠️ **Change this password immediately after first login** via Profile Panel → Password tab.
 
 ---
 

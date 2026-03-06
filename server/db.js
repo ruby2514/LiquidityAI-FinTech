@@ -256,14 +256,9 @@ for (const [k, v] of Object.entries(defaultPolicies)) insertPolicy.run(k, v);
 
 const seedUsers = [
   {
-    email: 'shellshock9001@gmail.com', password: 'DonnAI2026!',
-    displayName: 'Shellshock', role: 'super_admin', initials: 'SH',
-    department: 'Security Operations', title: 'Platform Administrator',
-  },
-  {
     email: 'donna@donnaai.com', password: 'DonnAI2026!',
-    displayName: 'DonnaAI', role: 'admin', initials: 'DA',
-    department: 'Platform Engineering', title: 'System Administrator',
+    displayName: 'DonnaAI', role: 'super_admin', initials: 'DA',
+    department: 'Platform Engineering', title: 'Platform Administrator',
   },
 ];
 

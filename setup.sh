@@ -125,16 +125,12 @@ print_summary() {
     echo ""
   fi
 
-  echo -e "  ${BOLD}Default admin accounts:${NC}"
-  echo -e "    ${YELLOW}Shellshock${NC} (Super Admin)"
-  echo -e "    Email:    shellshock9001@gmail.com"
-  echo -e "    Password: DonnAI2026!"
-  echo ""
-  echo -e "    ${YELLOW}DonnaAI${NC} (Admin)"
+  echo -e "  ${BOLD}Default admin account:${NC}"
+  echo -e "    ${YELLOW}DonnaAI${NC} (Super Admin)"
   echo -e "    Email:    donna@donnaai.com"
   echo -e "    Password: DonnAI2026!"
   echo ""
-  echo -e "  ${RED}⚠ Change these passwords after first login!${NC}"
+  echo -e "  ${RED}⚠ Change this password after first login!${NC}"
   echo ""
 }
 

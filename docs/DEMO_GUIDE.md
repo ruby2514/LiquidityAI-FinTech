@@ -32,7 +32,7 @@
 - **API keys** — scoped, hashed, and prefixed (`donna_sk_`) for programmatic access
 - **Every action logged** — immutable audit trail with actor, target, IP, timestamp
 
-**Demo Action:** Log in as Shellshock → open Profile Panel → show the Sessions tab with IP addresses.
+**Demo Action:** Log in as DonnaAI → open Profile Panel → show the Sessions tab with IP addresses.
 
 ---
 
@@ -109,7 +109,7 @@
 | Time | Action | What to Show |
 |------|--------|-------------|
 | 0:00 | Open `http://localhost:5173` | Login page |
-| 0:30 | Log in as Shellshock | Dashboard loads with full admin view |
+| 0:30 | Log in as DonnaAI | Dashboard loads with full admin view |
 | 1:00 | Walk through Dashboard | Entity counts, pipeline status, HITL queue |
 | 2:00 | Click Knowledge Graph | Graph visualization, entity inspector |
 | 3:00 | Click Ingestion Pipeline | 8-stage pipeline, source configs, run history |

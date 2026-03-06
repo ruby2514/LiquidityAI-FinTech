@@ -1,8 +1,7 @@
 # Git & GitHub — Universal Command Reference
 
 **For:** Every project you'll ever push, manage, or collaborate on.
-**Setup:** SSH key already configured (`SHA256:g9Wi0/FaHfq6NPfdnyp/wgyp/XaBF26pUGl7p7kW3qU`)
-**GitHub:** `Shellshock9001`
+**Setup:** SSH key already configured with GitHub.
 
 ---
 
@@ -22,7 +21,7 @@ git commit -m "Initial commit — [Project Name]"
 git branch -M main
 
 # 5. Add your GitHub repo as remote
-git remote add origin git@github.com:Shellshock9001/YOUR-REPO-NAME.git
+git remote add origin git@github.com:YOUR_USERNAME/YOUR-REPO-NAME.git
 
 # 6. Push to GitHub
 git push -u origin main
@@ -181,7 +180,7 @@ git pull --rebase
 git remote -v
 
 # Change remote URL
-git remote set-url origin git@github.com:Shellshock9001/NEW-REPO.git
+git remote set-url origin git@github.com:YOUR_USERNAME/NEW-REPO.git
 
 # Fetch without merging (just download)
 git fetch origin
@@ -251,13 +250,13 @@ git push
 
 ```powershell
 # Clone a repo to your machine
-git clone git@github.com:Shellshock9001/REPO-NAME.git
+git clone git@github.com:YOUR_USERNAME/REPO-NAME.git
 
 # Clone into a specific folder
-git clone git@github.com:Shellshock9001/REPO-NAME.git my-folder
+git clone git@github.com:YOUR_USERNAME/REPO-NAME.git my-folder
 
 # Clone only the latest commit (faster for huge repos)
-git clone --depth=1 git@github.com:Shellshock9001/REPO-NAME.git
+git clone --depth=1 git@github.com:YOUR_USERNAME/REPO-NAME.git
 ```
 
 ---
@@ -292,7 +291,7 @@ git add -A; git commit -m "update: your message here"; git push
 # Test SSH connection to GitHub
 ssh -T git@github.com
 
-# Expected output: "Hi Shellshock9001! You've successfully authenticated"
+# Expected output: "Hi YOUR_USERNAME! You've successfully authenticated"
 
 # See which SSH key is being used
 ssh -vT git@github.com 2>&1 | Select-String "identity file"
@@ -319,7 +318,7 @@ git init
 git add -A
 git commit -m "fresh start"
 git branch -M main
-git remote add origin git@github.com:Shellshock9001/REPO.git
+git remote add origin git@github.com:YOUR_USERNAME/REPO.git
 git push -u origin main --force
 ```
 
@@ -338,6 +337,6 @@ git push -u origin main --force
 | Merge branch | `git checkout main; git merge branch-name` |
 | Pull updates | `git pull` |
 | View history | `git log --oneline -10` |
-| Clone a repo | `git clone git@github.com:Shellshock9001/REPO.git` |
+| Clone a repo | `git clone git@github.com:YOUR_USERNAME/REPO.git` |
 | Tag a release | `git tag v1.0.0; git push --tags` |
 | Stash work | `git stash` / `git stash pop` |
