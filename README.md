@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🔐 DonnaAI — Financial Intelligence Graph
+# 🔐 Liquidity.ai — Financial Intelligence Graph
 
 **Enterprise-grade knowledge graph platform for financial data intelligence,**
 **with RBAC user management, risk-scored signups, and SOC 2-ready audit logging.**
@@ -17,7 +17,7 @@
 
 ## Table of Contents
 
-- [What Is DonnaAI?](#what-is-donnaai)
+- [What Is Liquidity.ai?](#what-is-liquidityai)
 - [Quick Start](#-quick-start)
 - [Requirements](#-requirements)
 - [Feature Status Matrix](#-feature-status-matrix)
@@ -35,9 +35,9 @@
 
 ---
 
-## What Is DonnaAI?
+## What Is Liquidity.ai?
 
-DonnaAI is a **financial intelligence graph platform** designed for investment firms, family offices, and fintech operators. It aggregates data from multiple sources (PitchBook, SEC EDGAR, LinkedIn, Crunchbase, etc.), resolves entities using AI, and presents a unified knowledge graph with full provenance tracking.
+Liquidity.ai is a **financial intelligence graph platform** designed for investment firms, family offices, and fintech operators. It aggregates data from multiple sources (PitchBook, SEC EDGAR, LinkedIn, Crunchbase, etc.), resolves entities using AI, and presents a unified knowledge graph with full provenance tracking.
 
 **Core Value Proposition:**
 - **Single Source of Truth (SSOT)** for canonical financial entities (orgs, funds, people, deals)
@@ -53,15 +53,15 @@ DonnaAI is a **financial intelligence graph platform** designed for investment f
 
 **Windows (PowerShell):**
 ```powershell
-git clone https://github.com/YOUR_USERNAME/DonnaAI_FinTech.git
-cd DonnaAI_FinTech
+git clone https://github.com/YOUR_USERNAME/Liquidity-ai.git
+cd Liquidity-ai
 .\setup.ps1
 ```
 
 **Linux / macOS:**
 ```bash
-git clone https://github.com/YOUR_USERNAME/DonnaAI_FinTech.git
-cd DonnaAI_FinTech
+git clone https://github.com/YOUR_USERNAME/Liquidity-ai.git
+cd Liquidity-ai
 chmod +x setup.sh && ./setup.sh
 ```
 
@@ -75,8 +75,8 @@ The setup script will:
 ### Option B — Docker (One Command)
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/DonnaAI_FinTech.git
-cd DonnaAI_FinTech
+git clone https://github.com/YOUR_USERNAME/Liquidity-ai.git
+cd Liquidity-ai
 docker compose up --build -d
 ```
 
@@ -85,8 +85,8 @@ App is live at `http://localhost:4001`. Share on LAN at `http://<YOUR_IP>:4001`.
 ### Option C — Manual Setup
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/DonnaAI_FinTech.git
-cd DonnaAI_FinTech
+git clone https://github.com/YOUR_USERNAME/Liquidity-ai.git
+cd Liquidity-ai
 npm install
 cp .env.example .env          # Edit .env — set JWT_SECRET
 mkdir data
@@ -105,7 +105,7 @@ npm start                      # Start production server on :3001
 | **Git** | Any | ⚡ Recommended | For cloning |
 | **Docker** | 20+ | ❌ Optional | For container deployment |
 
-> **No external databases.** DonnaAI uses SQLite — zero infrastructure needed.
+> **No external databases.** Liquidity.ai uses SQLite — zero infrastructure needed.
 
 ---
 
@@ -160,7 +160,7 @@ This is the honest state of every module. **✅ Functional** means it has a work
 ## 🏗 Architecture
 
 ```
-DonnaAI_FinTech/
+Liquidity-ai/
 │
 ├── server/                          # ─── BACKEND (Express + SQLite) ───
 │   ├── server.js                    # Entry point — intelligent port detection, middleware
@@ -548,7 +548,7 @@ npm start                # Start production server
 npm run docker:up        # docker compose up -d
 npm run docker:down      # docker compose down
 npm run docker:rebuild   # docker compose up --build -d
-npm run docker:logs      # docker compose logs -f donna
+npm run docker:logs      # docker compose logs -f liquidity
 ```
 
 ---
@@ -569,7 +569,7 @@ npm run docker:logs      # docker compose logs -f donna
 
 | User | Email | Role | Password |
 |------|-------|------|----------|
-| **DonnaAI** | `donna@donnaai.com` | Super Admin | `DonnAI2026!` |
+| **Liquidity.ai** | `admin@liquidity.ai` | Super Admin | `Liquidity2026!` |
 
 > ⚠️ **Change this password immediately after first login** via Profile Panel → Password tab.
 
@@ -590,7 +590,7 @@ npm run docker:logs      # docker compose logs -f donna
 |-------|----------|
 | `EADDRINUSE` | Both Vite and Express auto-find free ports in dev mode. In production, check for conflicting processes. |
 | Docker won't start | Docker uses port 4001, dev uses 3001 — they should never conflict. Check if something else is using 4001. |
-| Login fails after setup | Delete `data/donna.db` and restart — the DB will be re-created with fresh seed data. |
+| Login fails after setup | Delete `data/liquidity.db` and restart — the DB will be re-created with fresh seed data. |
 | `MODULE_NOT_FOUND` | Run `npm install` to install dependencies. |
 | Rate limited (429) | Wait 15 minutes, or restart the server to reset rate limiters. |
 | Stale frontend | Run `npm run build` to rebuild, or clear browser cache. |

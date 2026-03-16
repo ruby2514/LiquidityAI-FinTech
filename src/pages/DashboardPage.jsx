@@ -1,6 +1,7 @@
 import Icon from '../components/Icon';
 import Sparkline from '../components/Sparkline';
 import ConfidenceRing from '../components/ConfidenceRing';
+import IntelTicker from '../components/IntelTicker';
 
 const DashboardPage = () => {
     const kpis = [
@@ -33,7 +34,7 @@ const DashboardPage = () => {
             <div className="section-header">
                 <div>
                     <div className="section-title">Knowledge Graph Overview</div>
-                    <div className="section-subtitle">DonnaAI SSOT · Live · Updated 42s ago</div>
+                    <div className="section-subtitle">Liquidity.ai SSOT · Live · Updated 42s ago</div>
                 </div>
                 <div className="flex gap-8 items-center">
                     <div className="tag tag-green">● All Systems Nominal</div>
@@ -41,6 +42,9 @@ const DashboardPage = () => {
                     <button className="btn btn-primary"><Icon name="upload" size={12} /> Ingest Source</button>
                 </div>
             </div>
+
+            {/* Live Intel Ticker */}
+            <IntelTicker />
 
             {/* KPIs */}
             <div className="grid-4 mb-16">

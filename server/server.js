@@ -182,7 +182,7 @@ async function startServer() {
     }
 
     app.listen(port, '0.0.0.0', () => {
-        console.log(`\n🔐 DonnaAI API Server running on http://0.0.0.0:${port}`);
+        console.log(`\n🔐 Liquidity.ai API Server running on http://0.0.0.0:${port}`);
         console.log(`   Rate limiting: 10 auth / 15min, 100 api / 1min`);
         console.log(`   CORS origin:   ${corsOrigin}`);
         console.log(`   Features:      RBAC · Risk Scoring · Sessions · API Keys · Policies`);

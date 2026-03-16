@@ -13,7 +13,7 @@ Sign-up URL for friends — right now it's http://localhost:5173/ which only wor
 WARNING
 
 The existing 
-data/donna.db
+data/liquidity.db
  will be migrated with ALTER TABLE for new columns — Shellshock's account is preserved.
 
 Proposed Changes
@@ -107,7 +107,7 @@ Expose on 0.0.0.0:3001 (accessible from network)
 [MODIFY] 
 docker-compose.yml
 ports: "0.0.0.0:3001:3001" — accessible from any device on the network
-Persistent volume for donna.db
+Persistent volume for liquidity.db
 Set CORS_ORIGIN=* for Docker mode (or configurable)
 Friends access: http://<YOUR_LOCAL_IP>:3001/ → shows login page → click "Sign Up"
 

@@ -24,7 +24,7 @@ export default function App() {
         return (
             <div style={{ width: '100vw', height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#0A0C10' }}>
                 <div style={{ textAlign: 'center' }}>
-                    <div style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 28, fontWeight: 700, color: '#C9A84C', marginBottom: 8 }}>DonnaAI</div>
+                    <div style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 28, fontWeight: 700, color: '#2DD4BF', marginBottom: 8 }}>Liquidity.ai</div>
                     <div style={{ fontFamily: 'JetBrains Mono, monospace', fontSize: 10, color: '#4A5568' }}>Initializing secure session...</div>
                 </div>
             </div>
@@ -70,10 +70,10 @@ export default function App() {
     const govItems = visibleNav.filter(n => ['provenance', 'security', 'settings'].includes(n.id));
 
     return (
-        <div className="donna-app">
+        <div className="liq-app">
             <aside className="sidebar">
                 <div className="logo-area">
-                    <div className="logo-wordmark">DonnaAI</div>
+                    <div className="logo-wordmark">Liquidity.ai</div>
                     <div className="logo-sub">Financial Intelligence Graph</div>
                     <div className="status-pill"><div className="status-dot" />SSOT · Live</div>
                 </div>
@@ -120,7 +120,7 @@ export default function App() {
             <div className="main-content">
                 <header className="topbar">
                     <div className="breadcrumb">
-                        <span>DonnaAI</span>
+                        <span>Liquidity.ai</span>
                         <span className="breadcrumb-sep">/</span>
                         <span className="breadcrumb-current">{pageTitle}</span>
                     </div>

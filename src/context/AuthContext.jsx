@@ -5,8 +5,8 @@ const API = '/api';
 
 export function AuthProvider({ children }) {
     const [user, setUser] = useState(null);
-    const [token, setToken] = useState(() => localStorage.getItem('donna_token'));
-    const [refreshToken, setRefreshToken] = useState(() => localStorage.getItem('donna_refresh'));
+    const [token, setToken] = useState(() => localStorage.getItem('liq_token'));
+    const [refreshToken, setRefreshToken] = useState(() => localStorage.getItem('liq_refresh'));
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
@@ -14,12 +14,12 @@ export function AuthProvider({ children }) {
         setUser(null);
         setToken(null);
         setRefreshToken(null);
-        localStorage.removeItem('donna_token');
-        localStorage.removeItem('donna_refresh');
+        localStorage.removeItem('liq_token');
+        localStorage.removeItem('liq_refresh');
     }, []);
 
     const authFetch = useCallback(async (url, options = {}) => {
-        const currentToken = localStorage.getItem('donna_token');
+        const currentToken = localStorage.getItem('liq_token');
         const res = await fetch(url, {
             ...options,
             headers: {
@@ -30,7 +30,7 @@ export function AuthProvider({ children }) {
         });
 
         if (res.status === 401) {
-            const currentRefresh = localStorage.getItem('donna_refresh');
+            const currentRefresh = localStorage.getItem('liq_refresh');
             if (currentRefresh) {
                 try {
                     const refreshRes = await fetch(`${API}/auth/refresh`, {
@@ -40,8 +40,8 @@ export function AuthProvider({ children }) {
                     });
                     if (refreshRes.ok) {
                         const data = await refreshRes.json();
-                        localStorage.setItem('donna_token', data.accessToken);
-                        localStorage.setItem('donna_refresh', data.refreshToken);
+                        localStorage.setItem('liq_token', data.accessToken);
+                        localStorage.setItem('liq_refresh', data.refreshToken);
                         setToken(data.accessToken);
                         setRefreshToken(data.refreshToken);
                         return fetch(url, {
@@ -80,8 +80,8 @@ export function AuthProvider({ children }) {
             setError(data.error || 'Login failed');
             return { ok: false, error: data.error, code: data.code, minutesLeft: data.minutesLeft };
         }
-        localStorage.setItem('donna_token', data.accessToken);
-        localStorage.setItem('donna_refresh', data.refreshToken);
+        localStorage.setItem('liq_token', data.accessToken);
+        localStorage.setItem('liq_refresh', data.refreshToken);
         setToken(data.accessToken);
         setRefreshToken(data.refreshToken);
         setUser(data.user);

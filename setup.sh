@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ============================================================
-#  DonnaAI FinTech — Automated Setup Script (Linux / macOS)
+#  Liquidity.ai — Automated Setup Script (Linux / macOS)
 # ============================================================
 set -euo pipefail
 
@@ -10,7 +10,7 @@ BOLD='\033[1m'
 banner() {
   echo ""
   echo -e "${CYAN}╔═══════════════════════════════════════════════╗${NC}"
-  echo -e "${CYAN}║${NC}  ${BOLD}DonnaAI FinTech${NC} — Financial Intelligence Graph ${CYAN}║${NC}"
+  echo -e "${CYAN}║${NC}  ${BOLD}Liquidity.ai${NC} — Financial Intelligence Graph   ${CYAN}║${NC}"
   echo -e "${CYAN}║${NC}       Automated Setup for Linux / macOS        ${CYAN}║${NC}"
   echo -e "${CYAN}╚═══════════════════════════════════════════════╝${NC}"
   echo ""
@@ -126,9 +126,9 @@ print_summary() {
   fi
 
   echo -e "  ${BOLD}Default admin account:${NC}"
-  echo -e "    ${YELLOW}DonnaAI${NC} (Super Admin)"
-  echo -e "    Email:    donna@donnaai.com"
-  echo -e "    Password: DonnAI2026!"
+  echo -e "    ${YELLOW}Liquidity.ai${NC} (Super Admin)"
+  echo -e "    Email:    admin@liquidity.ai"
+  echo -e "    Password: Liquidity2026!"
   echo ""
   echo -e "  ${RED}⚠ Change this password after first login!${NC}"
   echo ""

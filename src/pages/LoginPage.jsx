@@ -31,7 +31,7 @@ const LoginPage = ({ onLogin, onSwitchToRegister, error, setError }) => {
                 <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 2, background: 'linear-gradient(90deg, transparent, #C9A84C, transparent)' }} />
 
                 <div style={{ textAlign: 'center', marginBottom: 32 }}>
-                    <div style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 28, fontWeight: 700, color: '#C9A84C', letterSpacing: '0.04em', marginBottom: 6 }}>DonnaAI</div>
+                    <div style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 28, fontWeight: 700, color: '#2DD4BF', letterSpacing: '0.04em', marginBottom: 6 }}>Liquidity.ai</div>
                     <div style={{ fontFamily: 'JetBrains Mono, monospace', fontSize: 9, color: '#4A5568', letterSpacing: '0.18em', textTransform: 'uppercase' }}>Financial Intelligence Graph</div>
                     <div style={{ display: 'inline-flex', alignItems: 'center', gap: 5, background: 'rgba(52,211,153,0.08)', border: '1px solid rgba(52,211,153,0.2)', borderRadius: 20, padding: '3px 8px', fontFamily: 'JetBrains Mono, monospace', fontSize: 9, color: '#34D399', marginTop: 10 }}>
                         <div style={{ width: 5, height: 5, borderRadius: '50%', background: '#34D399', boxShadow: '0 0 6px #34D399' }} />SSOT · Secure

@@ -75,7 +75,7 @@ const RegisterPage = ({ onRegister, onSwitchToLogin, error, setError }) => {
         <div className="auth-wrapper">
             <div className="auth-card" style={{ maxWidth: 440 }}>
                 <div style={{ textAlign: 'center', marginBottom: 24 }}>
-                    <div style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 28, fontWeight: 700, color: '#C9A84C', marginBottom: 4 }}>DonnaAI</div>
+                    <div style={{ fontFamily: 'Libre Baskerville, serif', fontSize: 28, fontWeight: 700, color: '#2DD4BF', marginBottom: 4 }}>Liquidity.ai</div>
                     <div className="mono" style={{ fontSize: 9, color: '#4A5568', letterSpacing: 3 }}>REQUEST ACCESS</div>
                 </div>
 

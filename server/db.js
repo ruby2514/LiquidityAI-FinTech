@@ -10,7 +10,7 @@ const DATA_DIR = process.env.DATA_DIR || path.join(__dirname, '..', 'data');
 
 if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
 
-const dbPath = path.join(DATA_DIR, 'donna.db');
+const dbPath = path.join(DATA_DIR, 'liquidity.db');
 const db = new Database(dbPath);
 
 db.pragma('journal_mode = WAL');
@@ -256,8 +256,8 @@ for (const [k, v] of Object.entries(defaultPolicies)) insertPolicy.run(k, v);
 
 const seedUsers = [
   {
-    email: 'donna@donnaai.com', password: 'DonnAI2026!',
-    displayName: 'DonnaAI', role: 'super_admin', initials: 'DA',
+    email: 'admin@liquidity.ai', password: 'Liquidity2026!',
+    displayName: 'Liquidity.ai', role: 'super_admin', initials: 'LQ',
     department: 'Platform Engineering', title: 'Platform Administrator',
   },
 ];

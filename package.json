@@ -1,5 +1,5 @@
 {
-  "name": "donnaai-fintech",
+  "name": "liquidity-ai",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -13,7 +13,7 @@
     "docker:up": "docker compose up -d",
     "docker:down": "docker compose down",
     "docker:rebuild": "docker compose up --build -d",
-    "docker:logs": "docker compose logs -f donna"
+    "docker:logs": "docker compose logs -f liquidity"
   },
   "dependencies": {
     "react": "^19.0.0",

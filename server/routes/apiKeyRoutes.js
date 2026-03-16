@@ -17,8 +17,8 @@ router.post('/', authenticate, (req, res) => {
         const invalidScopes = scopes.filter(s => !VALID_SCOPES.includes(s));
         if (invalidScopes.length) return res.status(400).json({ error: `Invalid scopes: ${invalidScopes.join(', ')}` });
 
-        // Generate key: donna_sk_<random>
-        const rawKey = `donna_sk_${crypto.randomBytes(32).toString('hex')}`;
+        // Generate key: liq_sk_<random>
+        const rawKey = `liq_sk_${crypto.randomBytes(32).toString('hex')}`;
         const keyHash = hashToken(rawKey);
         const keyPrefix = rawKey.slice(0, 16) + '...';
 

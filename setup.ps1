@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-  DonnaAI FinTech - Automated Setup Script (Windows)
+  Liquidity.ai - Automated Setup Script (Windows)
 .DESCRIPTION
   Checks prerequisites, installs dependencies, configures environment,
   builds the production frontend, and prints getting-started instructions.
@@ -12,7 +12,7 @@ $script:DockerAvailable = $false
 function Write-Banner {
   Write-Host ""
   Write-Host "  ====================================================" -ForegroundColor Cyan
-  Write-Host "   DonnaAI FinTech - Financial Intelligence Graph"       -ForegroundColor Cyan
+  Write-Host "   Liquidity.ai - Financial Intelligence Graph"         -ForegroundColor Cyan
   Write-Host "         Automated Setup for Windows"                    -ForegroundColor Cyan
   Write-Host "  ====================================================" -ForegroundColor Cyan
   Write-Host ""
@@ -126,9 +126,9 @@ function Write-Summary {
 
   Write-Host "  Default admin account:" -ForegroundColor White
   Write-Host ""
-  Write-Host "    DonnaAI (Super Admin)" -ForegroundColor Yellow
-  Write-Host "    Email:    donna@donnaai.com"
-  Write-Host "    Password: DonnAI2026!"
+  Write-Host "    Liquidity.ai (Super Admin)" -ForegroundColor Yellow
+  Write-Host "    Email:    admin@liquidity.ai"
+  Write-Host "    Password: Liquidity2026!"
   Write-Host ""
   Write-Host "  WARNING: Change this password after first login!" -ForegroundColor Red
   Write-Host ""
